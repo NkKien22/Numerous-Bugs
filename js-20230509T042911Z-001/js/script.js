@@ -169,3 +169,74 @@ window.addEventListener('scroll', scrollUp)
 // 	}
 //   }
   
+
+
+const heartIcons = document.querySelectorAll('.heart');
+const notificationBadge = document.querySelector('.notification-badge');
+
+let favorites = {};
+let favoritesCount = 0;
+
+// Load danh sách yêu thích từ localStorage (nếu có)
+if (localStorage.getItem('favorites')) {
+  favorites = JSON.parse(localStorage.getItem('favorites'));
+  favoritesCount = Object.keys(favorites).length;
+  notificationBadge.textContent = favoritesCount;
+  notificationBadge.style.display = 'inline-block';
+}
+
+heartIcons.forEach(heartIcon => {
+  const productCode = heartIcon.parentNode.innerText.trim();
+
+  // Kiểm tra xem sản phẩm đã được yêu thích chưa
+  if (favorites[productCode]) {
+    heartIcon.style.color = 'red';
+  }
+
+  heartIcon.addEventListener('click', function() {
+    if (!favorites[productCode]) {
+      // Thêm sản phẩm vào danh sách yêu thích
+      addToFavorites(productCode);
+
+      // Cập nhật số lượng sản phẩm yêu thích trong menu
+      favorites[productCode] = true;
+      favoritesCount++;
+      notificationBadge.textContent = favoritesCount;
+      notificationBadge.style.display = 'inline-block';
+
+      // Đổi màu icon trái tim sang đỏ
+      heartIcon.style.color = 'red';
+    } else {
+      // Xóa sản phẩm khỏi danh sách yêu thích
+      removeFromFavorites(productCode);
+
+      // Cập nhật số lượng sản phẩm yêu thích trong menu
+      delete favorites[productCode];
+      favoritesCount--;
+      notificationBadge.textContent = favoritesCount;
+      if (favoritesCount === 0) {
+        notificationBadge.style.display = 'none';
+      }
+
+      // Đổi màu icon trái tim sang đen
+      heartIcon.style.color = 'black';
+    }
+
+    // Lưu danh sách yêu thích vào localStorage
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  });
+
+  
+});
+
+function addToFavorites(productCode) {
+  // Code để thêm sản phẩm vào danh sách yêu thích
+  console.log(`Added ${productCode} to favorites`);
+}
+
+function removeFromFavorites(productCode) {
+  // Code để xóa sản phẩm khỏi danh sách yêu thích
+  console.log(`Removed ${productCode} from favorites`);
+}
+
+

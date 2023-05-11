@@ -48,20 +48,20 @@
                               <a href="#" class="menu__link">
                                 <span class="favorite-icon">❤️</span> 
                                 Yêu Thích
-                                <span class="notification-badge">1</span>
+                                <span class="notification-badge"></span>
                             </a>
                             
                             <li class="menu__item">
                                 <a href="#" class="menu__link cart">
                                     <i class="fa fa-shopping-cart"></i> Giỏ Hàng
-                                    <span class="notification-badge">2</span>
+                                    <span class="notification-badge cart">2</span>
                                 </a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link cart">
                                   <span class="favorite-icon">&#128276;</span> 
                                   <i class="fa-solid fa-bells"></i>Thông báo
-                                  <span class="notification-badge">3</span>
+                                  <span class="notification-badge cart">3</span>
                                 </a>
                               </li>
                               
@@ -87,55 +87,87 @@
                 </div>
             </div>
         </header>
-        
+       
         <main class="main">
             <div class="home">
                 <div class="container">
-                    <div class="home__inner">
+                    <div class="navbar">
+                        <ul class="nav" >
+                            <li class="hover_item" style="padding-right: 139px; font-size: 20px;margin-left:27px;" > 
+                                <a href="#" style="color: rgb(151, 148, 148); width: 100px;height: 30px; font-size: 20px;">Danh Mục</a>
+                                <ul class="navbar_childrent" style="margin-top: 25px;">
+                                    <li style="margin-top: 15px;">Áo Thun Nam</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Khoác Gió</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Phao</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Đôi</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Bombur</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Thun Tay Dài</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Sơ Mi Nam</li>
+                                    <hr width="50%">
+                                    <li style="margin-top: 15px;">Áo Tanktop</li>
+                                </ul>
+                            </li>
+                            <li style="padding-right: 180px;">
+                                <button style="color: white; width: 100px; height: 30px; background-color: #ea6363; font-style: normal; font-size: 15px; border-radius: 5px;">Sản phẩm</button>
+                              </li>
+                              <li style="padding-right: 180px;">
+                                <button style="color: white; width: 100px; height: 30px; background-color: #ea6363; font-style: normal;font-size: 15px;border-radius: 5px;">Tin Tức</button>
+                              </li>
+                              <li style="padding-right: 180px;">
+                                <button style="color: white; width: 100px; height: 30px; background-color: #ea6363; font-style: normal;font-size: 15px;border-radius: 5px;">Giới Thiệu</button>
+                              </li>
+                              <li>
+                                <button style="color: white; width: 100px; height: 30px; background-color: #ea6363; font-style: normal;font-size: 15px;border-radius: 5px;">Liên Hệ</button>
+                              </li>
+                              
+                        </ul>
+                    </div>
+                    <div class="home__inner" style="margin-left: 190px; margin-right: 20px; margin-top: 24px;">
                         <div class="swiper home__swiper">
                             <div class="swiper-wrapper home__wrapper">
                                 <!-- slide 1 -->
-                                <div class="swiper-slide home__slide" style="border: 2px solid #eec0ae; border-radius: 10px 10px 10px 10px;">
+                                <div class="swiper-slide home__slide" style="border: 2px solid #c3583d; border-radius: 10px 10px 10px 10px;">
                                     <div class="home__image-slide">
                                         <img src="./img-20230509T042124Z-001/img/home/house.svg" alt="img" class="home__img img">
                                     </div>
-                                    <h3 class="home__text">Chào Mừng Bạn Đến Với Numerous Bugs</h3>
+                                    <h3 class="home__text" style="font-size: 30px;">Chào Mừng Bạn Đến Với Numerous Bugs</h3>
                                 </div>
                                 <!-- slide 2 -->
-                                <div class="swiper-slide home__slide" style="border: 2px solid #eec0ae; border-radius: 10px 10px 10px 10px;">
+                                <div class="swiper-slide home__slide" style="border: 2px solid #c3583d; border-radius: 10px 10px 10px 10px;">
                                     <div class="home__image-slide">
                                         <img src="./img-20230509T042124Z-001/img/home/apartment.svg" alt="img" class="home__img img">
                                     </div>
-                                    <h3 class="home__text">Hãy Trải Nghiệm Không Gian Mua Sắm </h3>
+                                    <h3 class="home__text"style="font-size: 30px;">Hãy Trải Nghiệm Không Gian Mua Sắm </h3>
                                 </div>
                                 <!-- slide 3 -->
-                                <div class="swiper-slide home__slide" style="border: 2px solid #eec0ae; border-radius: 10px 10px 10px 10px;">
+                                <div class="swiper-slide home__slide" style="border: 2px solid #c3583d; border-radius: 10px 10px 10px 10px;">
                                     <div class="home__image-slide">
                                         <img src="./img-20230509T042124Z-001/img/home/office.svg" alt="img" class="home__img img">
                                     </div>
-                                    <h3 class="home__text">Numerous Bugs Đồ Chính Hãng Cao Cấp Tại Việt Nam</h3>
+                                    <h3 class="home__text"style="font-size: 30px;">Numerous Bugs Đồ Chính Hãng Cao Cấp Tại Việt Nam</h3>
                                 </div>
                                 <!-- slide 4 -->
-                                <div class="swiper-slide home__slide" style="border: 2px solid #eec0ae; border-radius: 10px 10px 10px 10px;">
+                                <div class="swiper-slide home__slide" style="border: 2px solid #c3583d; border-radius: 10px 10px 10px 10px;">
                                     <div class="home__image-slide">
                                         <img src="./img-20230509T042124Z-001/img/home/cargo-taxi.svg" alt="img" class="home__img img">
                                     </div>
-                                    <h3 class="home__text">Numerous Bugs Hân Hạnh Được Phục Vụ Quý Khách</h3>
+                                    <h3 class="home__text" style="font-size: 30px;">Numerous Bugs Hân Hạnh Được Phục Vụ Quý Khách</h3>
                                 </div>
-                                <!-- <div class="swiper-slide home__slide" style="border: 2px solid #eec0ae; border-radius: 10px 10px 10px 10px;">
-                                    <div class="home__image-slide">
-                                        <img src="./img-20230509T042124Z-001/img/home/office.svg" alt="img" class="home__img img">
-                                    </div>
-                                    <div class="home__block">
-                                        <h3 class="home__text">Numerous Bugs Hân Hạnh Được Phục Vụ Qúy Khách</h3>
-                                    </div>
-                                </div> -->
+                               
                             </div>
+                           
                             <div class="home__button">
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-scrollbar"></div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -173,9 +205,9 @@
                                     </div>
                                     <div class="auto__item--image">
                                         <img src="./img-20230509T042124Z-001/img/auto/ao-khoac-long-vu-nam-ghi-2020.jpg" alt="img" class="auto__item--img img">
+                                        <!-- <img src="./img-20230509T042124Z-001/img/auto/fb.jpg" alt="img" class="auto__item--img img"> -->
                                     </div>
-                                    <h4 class="auto__item--title"> 10S23TSS003C</h4>
-                                   
+                                    <h4 class="auto__item--title"> 10S23TSS003C<span id="heart" class="heart"></span></h4>
                                     <p class="auto__text">Áo Thun Tay Ngắn Nam Cổ Tròn Form Fitted</p>
                                     <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                                 </div>
@@ -184,7 +216,8 @@
                                 <div class="auto__item">
                                     <div class="auto__price">16.000.000 VNĐ</div>
                                     <p class="auto__subprice">Áo Hoodie Mùa Đông <br></p>
-                                    <p style="text-decoration: line-through; font-size: 18px; margin-bottom: 14px; color: rgb(229, 103, 45);"> -1.000.000 VNĐ </p>
+                                    <p style="text-decoration: line-through; font-size: 18px; margin-bottom: 14px; color: rgb(229, 103, 45);"> -1.000.000 VNĐ</p>
+                                  
                                     <div class="auto__item--block">
                                         <span>
                                             <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-weight-kilogram" width="24" height="24" viewBox="0 0 24 24"><path d="M12,3A4,4 0 0,1 16,7C16,7.73 15.81,8.41 15.46,9H18C18.95,9 19.75,9.67 19.95,10.56C21.96,18.57 22,18.78 22,19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19C2,18.78 2.04,18.57 4.05,10.56C4.25,9.67 5.05,9 6,9H8.54C8.19,8.41 8,7.73 8,7A4,4 0 0,1 12,3M12,5A2,2 0 0,0 10,7A2,2 0 0,0 12,9A2,2 0 0,0 14,7A2,2 0 0,0 12,5M6,11V19H8V16.5L9,17.5V19H11V17L9,15L11,13V11H9V12.5L8,13.5V11H6M15,11C13.89,11 13,11.89 13,13V17C13,18.11 13.89,19 15,19H18V14H16V17H15V13H18V11H15Z" /></svg>
@@ -206,7 +239,7 @@
                                     <div class="auto__item--image">
                                         <img src="./img-20230509T042124Z-001/img/auto/ao hoodie.jpg" alt="img" class="auto__item--img img">
                                     </div>
-                                    <h3 class="auto__item--title">10S20TSH043CR1</h3>
+                                    <h4 class="auto__item--title">10S20TSH043CR1<span id="heart" class="heart"></span></h4>
                                     <p class="auto__text">Áo Thun Nam Tay Ngắn Cổ Trụ Trơn Form Fitted</p>
                                     <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                                 </div>
@@ -237,7 +270,7 @@
                                     <div class="auto__item--image">
                                         <img src="./img-20230509T042124Z-001/img/auto/Áo Polo Xanh Tím Than.jpg" alt="img" class="auto__item--img img">
                                     </div>
-                                    <h3 class="auto__item--title">10S21TSH019CR2 </h3>
+                                    <h4 class="auto__item--title">10S21TSH019CR2<span id="heart" class="heart"></span> </h4>
                                     <p class="auto__text"> Áo Thun Nam Tay Ngắn Trơn Form Fitted</p>
                                     <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                                 </div>
@@ -268,7 +301,7 @@
                                     <div class="auto__item--image">
                                         <img src="./img-20230509T042124Z-001/img/auto/Áo phao chắn gió.jpg" alt="img" class="auto__item--img img">
                                     </div>
-                                    <h3 class="auto__item--title">10S23TSS019  </h3>
+                                    <h4 class="auto__item--title">10S23TSS019<span id="heart" class="heart"></span>  </h4>
                                     <p class="auto__text">Áo thun nam tay ngắn nhãn trang trí. REGULAR</p>
                                     <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                                 </div>
@@ -307,7 +340,7 @@
                                 <div class="auto__item--image">
                                     <img src="./img-20230509T042124Z-001/img/auto/áo tanktop.jpg" alt="img" class="auto__item--img img">
                                 </div>
-                                <h4 class="auto__item--title"> 13124FO320345  </h4>
+                                <h4 class="auto__item--title"> 13124FO320345<span id="heart" class="heart"></span>  </h4>
                                 <p class="auto__text">Áo Tanktop Acid Wash Printed Primateted</p>
                                 <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                             </div>
@@ -338,7 +371,7 @@
                                 <div class="auto__item--image">
                                     <img src="./img-20230509T042124Z-001/img/auto/áo sơ mi nam.jpg" alt="img" class="auto__item--img img">
                                 </div>
-                                <h3 class="auto__item--title">10S20TSH065CR12</h3>
+                                <h4 class="auto__item--title">10S20TSH06QR12<span id="heart" class="heart"></span></h4>
                                 <p class="auto__text">Áo Sơ Mi Nam Độc Quyền Chính Hãng </p>
                                 <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                             </div>
@@ -369,7 +402,7 @@
                                 <div class="auto__item--image">
                                     <img src="./img-20230509T042124Z-001/img/auto/áo thun tay dài.jpg" alt="img" class="auto__item--img img">
                                 </div>
-                                <h3 class="auto__item--title">12S21TSH019CR2 </h3>
+                                <h4 class="auto__item--title">12S21TSH019CR2<span id="heart" class="heart"></span> </h4>
                                 <p class="auto__text"> Áo Thun Tay Dài Limited Primary</p>
                                 <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                             </div>
@@ -400,7 +433,7 @@
                                 <div class="auto__item--image">
                                     <img src="./img-20230509T042124Z-001/img/auto/áo bomboo.webp" alt="img" class="auto__item--img img">
                                 </div>
-                                <h3 class="auto__item--title">10S23TSS019324</h3>
+                                <h4 class="auto__item--title">10S23TSS019324<span id="heart" class="heart"></span></h4>
                                 <p class="auto__text">Áo Bomber Nam đẹp form rộng trơn cao cấp đen cực chất</p>
                                 <a href="#popup" class="auto__btn btn popup-link">Xem chi tiết</a>
                             </div>
@@ -590,39 +623,6 @@
                 </div>
             </section>
         </main>
-
-        <!-- <footer class="footer">
-            <div class="container">
-                <div class="footer__inner">
-                    <a href="/" class="footer__logo">
-                        <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" alt="Logo" class="footer__logo img">
-                    </a>
-                    <div class="footer__button">
-                        <a href="#popup" class="footer__btn btn popup-link">Order service</a>
-                    </div>
-                    <div class="footer__social">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">
-                                    <img src="./img-20230509T042124Z-001/img/icon/in.svg" alt="img" class="footer__img img">
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">
-                                    <img src="./img-20230509T042124Z-001/img/icon/tw.svg" alt="img" class="footer__img img">
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">
-                                    <img src="./img-20230509T042124Z-001/img/icon/yt.svg" alt="img" class="footer__img img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer__copy">© 2023 Copyright <a href="https://dimafomaa.online" class="footer__link" target="_blank">@ardksfs_</a>. All rights reserved.</div>
-            </div>
-        </footer> -->
         <footer class="footer">
             <div class="container">
               <div class="footer__inner">
@@ -630,17 +630,7 @@
                   <a href="/" class="footer__logo">
                     <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" width="230rem" alt="Logo" class="footer__logo img">
                   </a>
-                  <!-- <div class="footer__column">
-                    <a href="#" class="footer__link">Liên hệ</a>
-                    <a href="#" class="footer__link">Giới thiệu</a>
-                  </div> -->
                 </div>
-                <!-- <div class="footer__logo-container">
-                    <div class="footer__column">
-                        <a href="#" class="footer__link">Liên hệ</a>
-                        <a href="#" class="footer__link">Giới thiệu</a>
-                    </div>
-                </div> -->
                 <div class="footer__links">
                     <div class="footer__column footer__column--right" style="font-size: 15px;">
                       <a href="#" class="footer__link">CẨM NANG THỜI TRANG</a>
@@ -668,8 +658,7 @@
                       <a href="#" class="footer__link">Store 2: Dịch Vụ 2, Vân Từ, Phú Xuyên, HN</a>
                       <a href="#" class="footer__link">Store 3: 186 Hoàng Văn Thụ, Tp. Thái Nguyên.</a>
                       <a href="#" class="footer__link">Store 4: 71 Hùng vương, Hải Châu, TP. Đà Nẵng</a>
-                      <a href="#" class="footer__link">Store 5: 44 Quang Trung, P.Vạn Thắng, TP.Nha Trang, T.Khánh Hoà</a>
-                      <a href="#" class="footer__link">Store 6: 137 Phùng Khoang, Nam Từ Liêm , Hà Nội</a>
+                      <a href="#" class="footer__link">Store 5: 137 Phùng Khoang, Nam Từ Liêm , Hà Nội</a>
                     </div>
                   </div>
                   <div class="footer__social">
@@ -714,9 +703,9 @@
                     <h2>Bạn phải đăng nhập vào hệ thống</h2>
                     <p class="blinking-text">Nhanh tay lựa chọn món đồ mình thích thôi nào</p>
                     <form>
-                        <input class="popup__input" type="text" name="name" placeholder="Name" >
-                        <input class="popup__input" type="tel" name="tel" placeholder="Phone" >
-                        <button class="popup__btn btn" type="submit">Submit</button>
+                        <input class="popup__input" type="text" name="name" placeholder="UserName" >
+                        <input class="popup__input" type="tel" name="tel" placeholder="PassWord" >
+                        <a href="./index.html"> <button class="popup__btn btn" type="submit">Đăng nhập</button></a>
                     </form>
                 </div>
             </div>
