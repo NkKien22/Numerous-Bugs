@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Numerous Bugs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="Website Icon" type="jpg" href="./img-20230509T042124Z-001/img/auto/logo banner1.jpg">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./css-20230509T042825Z-001/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css-20230509T042825Z-001/css/style1.css" rel="stylesheet">
+    <link href="./css-20230509T042825Z-001/css/style.css" rel="stylesheet">
+</head>
+
+<body style="background: rgb(223, 219, 219);">
+    <div class="wrapper">
+        <header class="header lock-padding">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="/" class="header__logo">
+                        <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" width="230rem" alt="Logo" class="header__logo img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item search">
+                                <form class="menu__search-form" action="#" method="get">
+                                  <input class="menu__search-input" type="text" required placeholder="Tìm kiếm...">
+                                  <button class="menu__search-button" type="submit" >Tìm kiếm</button>
+                                </form>
+                              </li>
+                              <a href="#" class="menu__link">
+                                <span class="favorite-icon">❤️</span> 
+                                Yêu Thích
+                                <span class="notification-badge"></span>
+                            </a>
+                            
+                            <li class="menu__item">
+                                <a href="#" class="menu__link cart">
+                                    <i class="fa fa-shopping-cart"></i> Giỏ Hàng
+                                    <span class="notification-badge cart">2</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link cart">
+                                  <span class="favorite-icon">&#128276;</span> 
+                                  <i class="fa-solid fa-bells"></i>Thông báo
+                                  <span class="notification-badge cart">3</span>
+                                </a>
+                              </li>
+                              
+                            <li class="menu__item">
+                                <a href="./Login.html" class="menu__link">
+                                    <i class="fa fa-user"></i>Đăng nhập
+                                </a>
+                            </li> 
+                            
+                        </ul>
+                    </nav>
+                    <div class="header__button">
+                        <div class="header__top-info">
+                            <a href="tel:+0869835318" class="header__phone">+84(086) 983-53-18</a>
+                            <span style="font-size: 13px; padding-top: 6px;">Việt Nam 8:00 - 18:00</span>
+                        </div>
+                        <a  class="header__lang">
+                            <img src="./img-20230509T042124Z-001/img/icon/VN.png" alt="img" class="header__lang--img img">
+                        </a>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3" style="">Numerous Bugs Chào Mừng Quý Khách</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="./index.html">Home</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Shop Sản phẩm Numerous Bugs</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Shop Detail Start -->
+    <div class="container-fluid py-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-5 pb-5">
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner border">
+                        <div class="carousel-item active">
+                            <img class="w-100 h-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                        <i class="fa fa-2x fa-angle-left text-dark"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                        <i class="fa fa-2x fa-angle-right text-dark"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-7 pb-5">
+                <h3 class="font-weight-semi-bold">Gucci</h3>
+                <div class="d-flex mb-3">
+                    <div class="text-primary mr-2">
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star-half-alt"></small>
+                        <small class="far fa-star"></small>
+                    </div>
+                   
+                    <small class="pt-1">(50 Reviews) </small> 
+                    <!-- ==> Phần đánh giá comment nhớ truyền dữ liệu -->
+                </div>
+                <h3 class="font-weight-semi-bold">Mã Sản Phẩm : h086315</h3>
+                <h3 class="font-weight-semi-bold mb-4">24.500.000 Đ</h3><del>10.000.000 VNĐ</del></h6>
+                <p class="mb-4">Áo Polo Nam Gucci GG Cotton Silk ‎742384 XJFGU 2270 Màu Nâu Be</p>
+                <div class="d-flex mb-3">
+                    <p class="text-dark font-weight-medium mb-0 mr-3">Sizes:</p>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-1" name="size">
+                            <label class="custom-control-label" for="size-1">XS</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-2" name="size">
+                            <label class="custom-control-label" for="size-2">S</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-3" name="size">
+                            <label class="custom-control-label" for="size-3">M</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-4" name="size">
+                            <label class="custom-control-label" for="size-4">L</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-5" name="size">
+                            <label class="custom-control-label" for="size-5">XL</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex mb-4">
+                    <p class="text-dark font-weight-medium mb-0 mr-3">Colors:</p>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-1" name="color">
+                            <label class="custom-control-label" for="color-1">Black</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-2" name="color">
+                            <label class="custom-control-label" for="color-2">White</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-3" name="color">
+                            <label class="custom-control-label" for="color-3">Red</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-4" name="color">
+                            <label class="custom-control-label" for="color-4">Blue</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-5" name="color">
+                            <label class="custom-control-label" for="color-5">Green</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center mb-4 pt-2">
+                    <div class="input-group quantity mr-3" style="width: 150px;">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary btn-minus" >
+                            <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control bg-secondary text-center" value="1">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary btn-plus">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
+                </div>
+                <div class="d-flex pt-2">
+                    <p class="text-dark font-weight-medium mb-0 mr-2">Share on:</p>
+                    <div class="d-inline-flex">
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+               Thích nghĩ cái gì thì sửa thêm vào phần này sau
+            </div>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Thông tin sản phẩm</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Hướng Dẫn Mua Hàng</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">Đánh giá</a>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <h4 class="mb-3" style="font-weight: bold;">Áo khoác nam kaki 2 lớp cao cấp thiết kế dây kéo trên tay áo có thật sự nổi bật ?</h4>
+                        <p>- NUMEROUS BUGS luôn mong muốn mang đến những mẫu thiết kế độc đáo nhưng vẫn giữ được sự thanh lịch, sang trọng vì thế mẫu áo khoác lần này đã được tinh tế thêm chi tiết dây kéo ngay tay áo nhằm nổi bật giúp người mặc tạo điểm nhấn trước đám đông</p>
+                        <p>- Ngoài ra tính ứng dụng cũng được NUMEROUS BUGS ưu tiên hàng đầu, thiết kế lần này có thể kết hợp nhiều items như quần jeans, áo thun hay quần tây giúp người mặc thời thượng tạo ấn tượng với phong cách thời trang riêng biệt. Nếu bạn còn đang tìm kiếm những mẫu áo khoác tránh nắng cho mùa hè này thì không nên bỏ qua bài viết này</p>
+                        <h4 class="mb-3" style="font-weight: bold;">Bảng size áo khoác nam hàng hiệu NUMEROUS BUGS</h4>
+                        <p>Áo khoác nam có 3 size dễ lựa chọn:</p>
+                        <p>+ Size M: Dài 66 cm; Rộng 57 cm; Dài tay 57 cm; Ngang vai 48 cm</p>
+                        <p>+ Size L: Dài 68 cm; Rộng 59 cm; Dài tay 59 cm; Ngang vai 50 cm</p>
+                        <p>+ Size XL: Dài 70 cm; Rộng 61 cm; Dài tay 61 cm; Ngang vai 52 cm</p>
+                        <h4 class="mb-3" style="font-weight: bold;">Áo khoác nam hàng hiệu NUMEROUS BUGS và cam kết khi mua hàng</h4>
+                        <p>- Áo khoác nam hàng hiệu NUMEROUS BUGS là hàng chính hãng, sản phẩm đúng với mô tả 100%</p>
+                        <p>- Hình ảnh sản phẩm đều được NUMEROUS BUGS thực hiện</p>
+                        <p>- Đảm bảo bao đổi trả nếu bị lỗi hay không giống với mô tả</p>
+                        <p>- Khách hàng gặp vấn đề về size đều được nhân viên tự vấn</p>
+                        <h4 class="mb-3" style="font-weight: bold;">Cách để áo khoác nam hàng hiệu NUMEROUS BUGS luôn mới:</h4>
+                        <p>- Nên lộn trái sản phẩm trước khi giặt máy</p>
+                        <p>- Phơi sản phẩm ở nơi khô thoáng, tránh nắng gắt</p>
+                        <p>- Hạn chế sử dụng chất tẩy, đặc biệt đối với quần áo màu</p>
+                        <p>- Mua ngay áo khoác nam hàng hiệu ngay hôm nay để nhận được các ưu đãi hấp dẫn nha!!</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <h4 class="mb-3"style="font-weight: bold;" >Chào mừng quý khách hàng đến với website chúng tôi.</h4>
+                        <p style="font-weight: bold;">Điều kiện và điều khoản sử dụng:</p>
+                        <p>- Khi quý khách hàng truy cập vào trang website của chúng tôi có nghĩa là quý khách đồng ý với các điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được đăng trên trang web mà không cần thông báo trước. Và khi quý khách tiếp tục sử dụng trang web, sau khi các thay đổi về Điều khoản này được đăng tải, có nghĩa là quý khách chấp nhận với những thay đổi đó.</p>
+                        <p>- Quý khách hàng vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.</p>
+                        <h4 class="mb-3"style="font-weight: bold;" >Trách nhiệm của người sử dụng:</h4>
+                        <p>- Khi vào web của chúng tôi, khách hàng phải đảm bảo đủ 18 tuổi, hoặc truy cập dưới sự giám sát của cha mẹ hay người giám hộ hợp pháp. Khách hàng đảm bảo có đầy đủ hành vi dân sự để thực hiện các giao dịch mua bán hàng hóa theo quy định hiện hành của pháp luật Việt Nam.</p>
+                        <p>- Khách hàng không được phép sử dụng bất kì chương trình hay công cụ nào nhằm mục đích khai thác, thay đổi dữ liệu bất hợp pháp trên hệ thống NUMEROUS BUGS. Mọi hành vi cố tình xâm phạm, tùy theo tính chất sự việc, chúng tôi có quyền khởi tố với các cơ quan có thẩm quyền theo quy định pháp luật hiện hành.</p>
+                        <p>- Không được gởi đường dẫn của các website khác lên website NUMEROUS BUGS. Tùy theo mức độ vi phạm, ban quản lý NUMEROUS BUGS sẽ tiến hành xóa bỏ nội dung hoặc chặn (block) những nội dung và thành viên đưa nội dung đó trên trang NUMEROUS BUGS.</p>
+                        <h4 class="mb-3"style="font-weight: bold;" >Bản quyền:</h4>
+                        <p>- NUMEROUS BUGS là chủ sở hữu của trang web này. Việc chỉnh sửa trang web, cập nhật và thay đổi nội dung, hình thức trang web thuộc thẩm quyền của NUMEROUS BUGS. Bất kỳ chỉnh sửa, thay đổi, phân phối hoặc tái sử dụng những nội dung trong trang này vì bất kỳ mục đích nào mà không được sự đồng ý của NUMEROUS BUGS đều được xem là hành vi vi phạm quyền lợi hợp pháp của NUMEROUS BUGS.</p>
+                        <h4 class="mb-3"style="font-weight: bold;" >Việc sử dụng thông tin:</h4>
+                        <p>- Tất cả các thông tin khách hàng cung cấp và nội dung giao dịch đều được NUMEROUS BUGS lưu giữ bảo mật tuyệt đối trên hệ thống. NUMEROUS BUGS cam đoan sẽ không bán hoặc chia sẻ dẫn đến làm lộ thông tin cá nhân của bạn, không vì những mục đích thương mại mà vi phạm cam kết của chúng tôi ghi trong chính sách bảo mật này.</p>
+                        <h4 class="mb-3"style="font-weight: bold;" >Việc thay đổi nội dung:</h4>
+                        <p>- NUMEROUS BUGS giữ quyền thay đổi, chỉnh sửa và loại bỏ những thông tin trên trang web này vào bất kỳ thời điểm nào vì bất kỳ lý do nào.</p>
+                        <!-- <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                    </li>
+                                  </ul> 
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        Sit erat duo lorem duo ea consetetur, et eirmod takimata.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Duo amet accusam eirmod nonumy stet et et stet eirmod.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
+                                    </li>
+                                  </ul> 
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="mb-4">1 đánh giá cho "Áo Sơ Mi Sành Điệu Màu Sắc"</h4>
+                                <div class="media mb-4">
+                                    <img src="./img-20230509T042124Z-001/img/auto/img_comment.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                    <div class="media-body">
+                                        <h6>Nguyễn Khắc Kiên<small> - <i>01 tháng 2030</i></small></h6>
+                                        <div class="text-primary mb-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p>Sản phẩm của NUMEROUS BUGS thật là tuyệt vời  </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="mb-4">Để lại đánh giá</h4>
+                                <small>Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</small>
+                                <div class="d-flex my-3">
+                                    <p class="mb-0 mr-2">Đánh giá của bạn *:</p>
+                                    <div class="text-primary">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="message">Đánh giá của bạn *</label>
+                                        <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Tên của bạn *</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email của bạn *</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <input type="submit" value="Đánh giá" class="btn btn-primary px-3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop Detail End -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">Bạn cũng có thể thích</span></h2>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel related-carousel">
+                    <div class="card product-item border-0">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Áo khoác lông vũ</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>1.200.000 VNĐ</h6><h6 class="text-muted ml-2"><del>600.000 VNĐ</del></h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                        </div>
+                    </div>
+                    <div class="card product-item border-0">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Áo Hoodie</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>700.000 VNĐ</h6><h6 class="text-muted ml-2"><del>200.000 VNĐ</del></h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                        </div>
+                    </div>
+                    <div class="card product-item border-0">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Áo sơ mi trắng</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>800.000 VNĐ</h6><h6 class="text-muted ml-2"><del>200.000 VNĐ</del></h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                        </div>
+                    </div>
+                    <div class="card product-item border-0">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Áo cổ lọ</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>690.000 VNĐ</h6><h6 class="text-muted ml-2"><del>150.000 VNĐ</del></h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                        </div>
+                    </div>
+                    <div class="card product-item border-0">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" alt="">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Áo phông cộc tay</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>500.000 VNĐ</h6><h6 class="text-muted ml-2"><del>300.000 VNĐ</del></h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                            <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+ <div class="container-fluid py-5">
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="owl-carousel vendor-carousel" style="border: 1px solid #e7cdcd;">
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/1.jpg" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;" >
+                    <img src="./img-20230509T042124Z-001/img/auto/2.png" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/3.jpg" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/4.jpg" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/5.jpg" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/6.jpg" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/7.jpg" alt="">
+                </div>
+                <div class="bg-light p-4" style="border: 1px solid #ec7242;">
+                    <img src="./img-20230509T042124Z-001/img/auto/8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__columns">
+              <a href="/" class="footer__logo"> 
+                <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" width="230rem" alt="Logo" class="footer__logo img">
+              </a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__column footer__column--right" style="font-size: 15px;">
+                  <a href="#" class="footer__link">CẨM NANG THỜI TRANG</a>
+                  <a href="#" class="footer__link">Vest nam</a>
+                  <a href="#" class="footer__link">Vest cưới</a>
+                  <a href="#" class="footer__link">Vest công sở</a>
+                  <a href="#" class="footer__link">Đồng phục</a>
+                  <a href="#" class="footer__link">Sơ mi nam</a>
+                </div>
+              </div>
+              <div class="footer__links">
+                <div class="footer__column footer__column--right" style="font-size: 15px;">
+                  <a href="#" class="footer__link">HỖ TRỢ KHÁCH HÀNG</a>
+                  <a href="#" class="footer__link">Hướng dẫn mua hàng online</a>
+                  <a href="#" class="footer__link">Chính sách đổi trả, bảo hành</a>
+                  <a href="#" class="footer__link">Chính sách vận chuyển</a>
+                  <a href="#" class="footer__link">Hướng dẫn thanh toán</a>
+                  <a href="#" class="footer__link">Chính sách bảo mật</a>
+                </div>
+              </div>
+              <div class="footer__links">
+                <div class="footer__column footer__column--right" style="font-size: 15px;">
+                  <a href="#" class="footer__link">DANH SÁCH CỬA HÀNG</a>
+                  <a href="#" class="footer__link">Store 1: 287 Trương Định, Hoàng Mai, HN</a>
+                  <a href="#" class="footer__link">Store 2: Dịch Vụ 2, Vân Từ, Phú Xuyên, HN</a>
+                  <a href="#" class="footer__link">Store 3: 186 Hoàng Văn Thụ, Tp. Thái Nguyên.</a>
+                  <a href="#" class="footer__link">Store 4: 71 Hùng vương, Hải Châu, TP. Đà Nẵng</a>
+                  <a href="#" class="footer__link">Store 5: 137 Phùng Khoang, Nam Từ Liêm , Hà Nội</a>
+                </div>
+              </div>
+              <div class="footer__social">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img-20230509T042124Z-001/img/icon/in.svg" alt="img" class="footer__img img">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img-20230509T042124Z-001/img/icon/tw.svg" alt="img" class="footer__img img">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img-20230509T042124Z-001/img/icon/yt.svg" alt="img" class="footer__img img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="footer__copy">
+            © 2023 Copyright 
+            <a href="https://www.facebook.com/Khackien2002/" class="footer__link" target="_blank">@Khackien2002</a>. 
+            All rights reserved.
+          </div>
+        </div>
+      </footer>
+      
+    <!-- <a href="#" class="scroll-up" id="scroll-up">
+        <img src="./img-20230509T042124Z-001/img/icon/arrow.svg" alt="img" class="scroll__img img">
+    </a> -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+    
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./js-20230509T042911Z-001/js/easing.min.js"></script>
+    <script src="./js-20230509T042911Z-001/js/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="./js-20230509T042911Z-001/js/script.js"></script>
+    <!-- Template Javascript -->
+    <script src="./js-20230509T042911Z-001/js/main.js"></script>
+</body>
+
+</html>

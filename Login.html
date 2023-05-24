@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numerous Bugs</title>
+    <link rel="stylesheet" href="./css-20230509T042825Z-001/css/Login.css" />
+    <!-- Thêm đoạn mã này vào phần đầu của trang web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4uJLEGTjyTzQixcDLULYV235M7vDIEzgMT0D6UfUa8L+KJmImGKtUS2vvFFd1xkP/lPmZS9Mgbs32bYoXLDp4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="Website Icon" type="jpg" href="./img-20230509T042124Z-001/img/auto/logo banner1.jpg">
+  </head>
+  <body style="background-image: url(./img-20230509T042124Z-001/img/auto/background-image.jpg); background-size: cover;">
+    <h2  style="color: rgb(240, 86, 86);">Chào mừng bạn đến với Website Numerous Bugs</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h2>Tạo mới tài khoản</h2>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div> 
+          <span>Hoặc sử dụng PhoneNumber để đăng kí</span>
+          <input type="text" placeholder="Name" />
+          <input type="PhoneNumber" placeholder="PhoneNumber" />
+          <input type="password" placeholder="Password" />
+          <button>Đăng kí</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Đăng Nhập</h1> 
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>       
+          <span>Sử dụng tài khoản Để Đăng Nhập</span>
+          <input type="email" required placeholder="PhoneNumber" />
+          <input type="password" required placeholder="Password" />
+          <a href="#">Quên Mật Khẩu?</a>
+
+          <!-- Đoạn code không cần nhập dữ liệu -->
+          <a href="./index.html" style="border-radius: 20px;
+          border: 1px solid #FF4B2B;
+          background-color: #FF4B2B;
+          color: #FFFFFF;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 12px 45px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          transition: transform 80ms ease-in;">Đăng Nhập</a>
+
+          <!-- Đoạn code check validate để có thể vào nhá Anh Kiều, ghép api mở đoạn code này ra đóng đoạn code trên vào -->
+          <!-- <a href="./index.html"  style="border-radius: 20px;
+          border: 1px solid #FF4B2B;
+          background-color: #FF4B2B;
+          color: #FFFFFF;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 3px 12px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          transition: transform 80ms ease-in;"><button type="submit" id="login-button">Đăng Nhập</button></a>  -->
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Xin chào bạn!</h1>
+            <p>
+                Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn
+            </p>
+            <button class="ghost" id="signIn">Đăng Nhập</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Xin chào bạn!</h1>
+            <p>Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+            <button class="ghost" id="signUp">Đăng kí</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js-20230509T042911Z-001/js/login.js"></script>
+  </body>
+</html>

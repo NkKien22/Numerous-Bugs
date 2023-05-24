@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sider Menu Bar CSS</title>
+    <link rel="stylesheet" href="./css-20230509T042825Z-001/css/Sidebarmenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <body id="body">
+    <div class="l-navbar" id="navbar">
+      <div class="nav">
+        <div>
+          <a href="#" class="nav__logo">
+            <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" alt="" class="nav__logo-icon">
+            <span class="nav__logo-text">Numerous Bugs</span>
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-chevron-right'></i>
+          </div>
+          <ul class="nav__list">
+            <!-- <a href="#" class="nav__link">
+              <i class='bx bx-grid-alt nav__icon'></i>
+              <span class="nav__text" data-table-id="home" id="home-btn">Home</span>
+            </a> -->
+            <a href="#" class="nav__link" id="user-link">
+              <i class='bx bx-user nav__icon'></i>
+              <span class="nav__text" data-table-id="user" id="user-btn">Người dùng</span>
+            </a>
+            <a href="#" class="nav__link" id="notification-link">
+              <i class='bx bxl-product-hunt nav__icon'></i>
+              <span class="nav__text" data-table-id="notification">Sản Phẩm</span>
+            </a>
+            <a href="#" class="nav__link" id="favorites-link">
+              <i class='bx bx-notepad nav__icon'></i>
+              <span class="nav__text" data-table-id="favorites">Hóa Đơn</span>
+            </a>
+            <a href="#" class="nav__link" id="quan-li-link">
+              <i class='bx bx-body nav__icon'></i>
+              <span class="nav__text" data-table-id="quan-li">Khách Hàng</span>
+            </a>
+            <a href="#" class="nav__link" id="chat-link">
+              <i class='bx bx-walk nav__icon'></i>
+              <span class="nav__text" data-table-id="chat">Nhân Viên</span>
+            </a>
+          </ul>
+        </div>
+        <a href="./index.html" class="nav__link" style="margin-top:699px;">
+          <i class='bx bx-log-out-circle nav__icon'></i>
+          <span class="nav__text">Close</span>
+        </a>
+        <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+      </div>
+    
+    </div>
+    
+    <!-- Profile Người dùng -->
+    <div id="table-container-user" class="table-container" style="display: none;">
+      <table class="table">
+        <thead>
+          <h2 style="text-align: center;">Profile</h2>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm" style="border-radius: 5px;border-color: rgb(233, 188, 134);">
+            <button class="search-button" style="float: left;color: bisque;">Tìm kiếm</button>
+            <button class="add-button" style="margin-right: 20px; float: right; margin-bottom: 20px; padding: 10px 40px; background-color: rgb(228, 80, 64); color: white; display: flex; justify-content: center; align-items: center;">Thêm mới</button>
+          </div>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">STT</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Họ và Tên</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Ảnh</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Địa Chỉ</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Số điện thoại</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Email</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Ngày tháng năm sinh</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">1</th>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Nguyễn Khắc Kiên</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;"><img src="./img-20230509T042124Z-001/img/auto/spbanchay-5.jpg" width="60px" height="60px"></td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Vàng Danh-Uông Bí-Quảng Ninh</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">0869835318</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Khackienvd02@gmail.com</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">22/12/2002</td>
+            <!-- <td style="border: 1px solid #BBBBBB; text-align: center;">
+              <span style="display: flex; justify-content: center; align-items: center;">
+                <button  style="padding-left: 2px;"><i class='bx bxs-edit-alt'></i></button> 
+                <button><i class='bx bxs-coffee-togo'></i></button> 
+              </span>
+            </td> -->
+          </tr>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">2</th>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 7</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 8</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 9</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 10</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 11</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 12</td>
+          </tr>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">3</th>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 13</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 14</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 15</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 16</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 17</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 18</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <div id="pagination" style="text-align: center; margin-top: 20px; float: right; margin-right: 30px;">
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="previousPage()">Previous</button>
+        <div id="page-numbers" style="display: inline-block;"></div>
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="nextPage()">Next</button>
+      </div> -->
+      <div class="pagination">
+        <button id="previous">&laquo;</button>
+        <button id="page1" class="active">1</button>
+        <button id="page2">2</button>
+        <button id="page3">3</button>
+        <button id="page4">4</button>
+        <button id="page5">5</button>
+        <button >...</button>
+        <button id="page100">100</button>
+        <button id="next">&raquo;</button>
+      </div>
+      
+      
+    </div>
+    
+    
+    <!-- Quản lí sản phẩm -->
+    <div id="table-container-notification" class="table-container" style="display: none;">
+      <table class="table">
+        <thead>
+          <h2 style="text-align: center;">Quản lí sản phẩm</h2>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+            <button class="search-button" style="float: left;">Tìm kiếm</button>
+            <button class="add-button" style="margin-right: 20px; float: right; margin-bottom: 20px; padding: 10px 40px; background-color: rgb(228, 80, 64); color: white; display: flex; justify-content: center; align-items: center;">Thêm mới</button>
+          </div>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Họ và Tên</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Địa Chỉ</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Số Điện Thoại</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Email</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Ảnh</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Quê quán</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 1</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 2</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 3</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 4</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 5</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 6</td>
+            
+          </tr>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 7</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 8</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 9</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 10</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 11</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 12</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 13</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 14</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 15</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 16</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 17</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 18</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="pagination" style="text-align: center; margin-top: 20px; float: right; margin-right: 30px;">
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="previousPage()">Previous</button>
+        <div id="page-numbers" style="display: inline-block;"></div>
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+    
+    <!-- Quản lí hóa đơn -->
+    <div id="table-container-favorites" class="table-container" style="display: none;">
+      <table class="table">
+        <thead>
+          <h2 style="text-align: center;">Quản lí hóa đơn</h2>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+            <button class="search-button" style="float: left;">Tìm kiếm</button>
+            <button class="add-button" style="margin-right: 20px; float: right; margin-bottom: 20px; padding: 10px 40px; background-color: rgb(228, 80, 64); color: white; display: flex; justify-content: center; align-items: center;">Thêm mới</button>
+          </div>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Họ và Tên</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Địa Chỉ</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Số Điện Thoại</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Email</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Ảnh</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Quê quán</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 1</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 2</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 3</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 4</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 5</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 6</td>
+            
+          </tr>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 7</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 8</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 9</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 10</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 11</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 12</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 13</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 14</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 15</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 16</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 17</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 18</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="pagination" style="text-align: center; margin-top: 20px; float: right; margin-right: 30px;">
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="previousPage()">Previous</button>
+        <div id="page-numbers" style="display: inline-block;"></div>
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+    
+      <!-- Quản lí khách hàng  -->
+    <div id="table-container-quan-li" class="table-container" style="display: none;">
+      <table class="table">
+        <thead>
+          <h2 style="text-align: center;">Quản lí khách hàng</h2>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+            <button class="search-button" style="float: left;">Tìm kiếm</button>
+            <button class="add-button" style="margin-right: 20px; float: right; margin-bottom: 20px; padding: 10px 40px; background-color: rgb(228, 80, 64); color: white; display: flex; justify-content: center; align-items: center;">Thêm mới</button>
+          </div>
+          <tr>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Họ và Tên</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Địa Chỉ</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Số Điện Thoại</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Email</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Ảnh</th>
+            <th style="border: 1px solid #BBBBBB; text-align: center;">Quê quán</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 1</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 2</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 3</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 4</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 5</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 6</td>
+            
+          </tr>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 7</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 8</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 9</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 10</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 11</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 12</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 13</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 14</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 15</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 16</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 17</td>
+            <td style="border: 1px solid #BBBBBB; text-align: center;">Data 18</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="pagination" style="text-align: center; margin-top: 20px; float: right; margin-right: 30px;">
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="previousPage()">Previous</button>
+        <div id="page-numbers" style="display: inline-block;"></div>
+        <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+    
+  <!-- Quản lí nhân viên  -->
+  <div id="table-container-chat" class="table-container" style="display: none;">
+    <table class="table">
+      <thead>
+        <h2 style="text-align: center;">Quản lí nhân viên</h2>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Nhập từ khóa tìm kiếm">
+          <button class="search-button" style="float: left;">Tìm kiếm</button>
+          <button class="add-button" style="margin-right: 20px; float: right; margin-bottom: 20px; padding: 10px 40px; background-color: rgb(228, 80, 64); color: white; display: flex; justify-content: center; align-items: center;">Thêm mới</button>
+        </div>
+        <tr>
+          <th style="border: 1px solid #BBBBBB; text-align: center;">Họ và Tên</th>
+          <th style="border: 1px solid #BBBBBB; text-align: center;">Địa Chỉ</th>
+          <th style="border: 1px solid #BBBBBB; text-align: center;">Số Điện Thoại</th>
+          <th style="border: 1px solid #BBBBBB; text-align: center;">Email</th>
+          <th style="border: 1px solid #BBBBBB; text-align: center;">Ảnh</th>
+          <th style="border: 1px solid #BBBBBB; text-align: center;">Quê quán</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 1</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 2</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 3</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 4</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 5</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 6</td>
+          
+        </tr>
+        <tr>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 7</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 8</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 9</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 10</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 11</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 12</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 13</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 14</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 15</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 16</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 17</td>
+          <td style="border: 1px solid #BBBBBB; text-align: center;">Data 18</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="pagination" style="text-align: center; margin-top: 20px; float: right; margin-right: 30px;">
+      <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="previousPage()">Previous</button>
+      <div id="page-numbers" style="display: inline-block;"></div>
+      <button class="pagination-button" style="background-color: rgb(228, 80, 64);color: white; padding: 10px 10px 10px 10px;" onclick="nextPage()">Next</button>
+    </div>
+  </div>
+
+
+    </div>
+    
+    
+    <script src="./js-20230509T042911Z-001/js/SidebarMenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Numerous Bugs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="Website Icon" type="jpg" href="./img-20230509T042124Z-001/img/auto/logo banner1.jpg">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./css-20230509T042825Z-001/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css-20230509T042825Z-001/css/style1.css" rel="stylesheet">
+    <link href="./css-20230509T042825Z-001/css/style.css" rel="stylesheet">
+</head>
+
+<body style="background: rgb(223, 219, 219);">
+    <div class="wrapper">
+        <header class="header lock-padding">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="/" class="header__logo">
+                        <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" width="230rem" alt="Logo" class="header__logo img">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item search">
+                                <form class="menu__search-form" action="#" method="get">
+                                  <input class="menu__search-input" type="text" required placeholder="Tìm kiếm...">
+                                  <button class="menu__search-button" type="submit" >Tìm kiếm</button>
+                                </form>
+                              </li>
+                              <a href="#" class="menu__link">
+                                <span class="favorite-icon">❤️</span> 
+                                Yêu Thích
+                                <span class="notification-badge"></span>
+                            </a>
+                            
+                            <li class="menu__item">
+                                <a href="#" class="menu__link cart">
+                                    <i class="fa fa-shopping-cart"></i> Giỏ Hàng
+                                    <span class="notification-badge cart">2</span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link cart">
+                                  <span class="favorite-icon">&#128276;</span> 
+                                  <i class="fa-solid fa-bells"></i>Thông báo
+                                  <span class="notification-badge cart">3</span>
+                                </a>
+                              </li>
+                              
+                            <li class="menu__item">
+                                <a href="./Login.html" class="menu__link">
+                                    <i class="fa fa-user"></i>Đăng nhập
+                                </a>
+                            </li> 
+                            
+                        </ul>
+                    </nav>
+                    <div class="header__button">
+                        <div class="header__top-info">
+                            <a href="tel:+0869835318" class="header__phone">+84(086) 983-53-18</a>
+                            <span style="font-size: 13px; padding-top: 6px;">Việt Nam 8:00 - 18:00</span>
+                        </div>
+                        <a  class="header__lang">
+                            <img src="./img-20230509T042124Z-001/img/icon/VN.png" alt="img" class="header__lang--img img">
+                        </a>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3" style="--color-1: #ec7242; --color-2: #cf4a4a; --color-3: #bd425c; --color-4: #b53bb5; animation: blink 2s infinite;">Numerous Bugs Chào Mừng Quý Khách</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="./index.html">Home</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0" >Shop Sản phẩm Numerous Bugs</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <!-- Shop Sidebar Start -->
+            <div class="col-lg-3 col-md-12">
+                <!-- Price Start -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Lọc theo giá</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="price-all">
+                            <label class="custom-control-label" for="price-all">Tổng giá tiền</label>
+                            <span class="badge border font-weight-normal">Tổng số lượng : 1156</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-1">
+                            <label class="custom-control-label" for="price-1">100.000 VNĐ - 10.000.000 VNĐ</label>
+                            <span class="badge border font-weight-normal">Số lượng : 302</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-2">
+                            <label class="custom-control-label" for="price-2">10.000.000 VNĐ - 30.000.000 VNĐ</label>
+                            <span class="badge border font-weight-normal">Số lượng : 295</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-3">
+                            <label class="custom-control-label" for="price-3">30.000.000 VNĐ - 50.000.000 VNĐ</label>
+                            <span class="badge border font-weight-normal">Số lượng : 246</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-4">
+                            <label class="custom-control-label" for="price-4">50.000.000 VNĐ - 80.000.000 VNĐ</label>
+                            <span class="badge border font-weight-normal">Số lượng : 145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="price-5">
+                            <label class="custom-control-label" for="price-5">80.000.000 VNĐ - 150.000.000 VNĐ</label>
+                            <span class="badge border font-weight-normal">Số lượng : 168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Price End -->
+                
+                <!-- Color Start -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Lọc theo màu</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="color-all">
+                            <label class="custom-control-label" for="price-all">Tất cả màu</label>
+                            <span class="badge border font-weight-normal">Tổng số lượng : 9609</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-1">
+                            <label class="custom-control-label" for="color-1">Đen</label>
+                            <span class="badge border font-weight-normal">Số lượng : 1505</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-2">
+                            <label class="custom-control-label" for="color-2">Trắng</label>
+                            <span class="badge border font-weight-normal">Số lượng : 2945</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-3">
+                            <label class="custom-control-label" for="color-3">Đỏ</label>
+                            <span class="badge border font-weight-normal">Số lượng : 2646</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-4">
+                            <label class="custom-control-label" for="color-4">Xanh nước biển</label>
+                            <span class="badge border font-weight-normal">Số lượng : 1345</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="color-5">
+                            <label class="custom-control-label" for="color-5">Xanh lá cây</label>
+                            <span class="badge border font-weight-normal">Số lượng : 1168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Color End -->
+
+                <!-- Size Start -->
+                <div class="mb-5">
+                    <h5 class="font-weight-semi-bold mb-4">Lọc theo Size</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="size-all">
+                            <label class="custom-control-label" for="size-all">Tất cả kích thước</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-1">
+                            <label class="custom-control-label" for="size-1">XS</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-2">
+                            <label class="custom-control-label" for="size-2">S</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-3">
+                            <label class="custom-control-label" for="size-3">M</label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-4">
+                            <label class="custom-control-label" for="size-4">L</label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="size-5">
+                            <label class="custom-control-label" for="size-5">XL</label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Size End -->
+            </div>
+            <!-- Shop Sidebar End -->
+
+
+            <!-- Shop Product Start -->
+            <div class="col-lg-9 col-md-12">
+                <div class="row pb-3">
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search By Name">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text bg-transparent text-primary">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="dropdown ml-4">
+                                <button class="btn border dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="background-color: rgb(215, 89, 64);
+                                transition: background-color 0.3s;
+                                ">
+                                Sắp xếp
+                            </button>
+                            
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Mới nhất</a>
+                                    <a class="dropdown-item" href="#">Phổ biến</a>
+                                    <a class="dropdown-item" href="#">Đánh giá tốt nhất</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông chó</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>500.000 VNĐ</h6><h6 class="text-muted ml-2"><del>200.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông mèo</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>1.200.000 VNĐ</h6><h6 class="text-muted ml-2"><del>500.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông vịt</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>800.000 VNĐ</h6><h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông hổ</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>26.000.000 VNĐ</h6><h6 class="text-muted ml-2"><del>2.000.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông gà</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>45.000.000</h6><h6 class="text-muted ml-2"><del>10.000.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông gấu</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>74.000.000 VNĐ</h6><h6 class="text-muted ml-2"><del>10.000.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông ngựa</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>78.000.000 VNĐ</h6><h6 class="text-muted ml-2"><del>40.000.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông chim</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>90.000.000 VNĐ</h6><h6 class="text-muted ml-2"><del>4.000.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="./img-20230509T042124Z-001/img/auto/spbanchay-2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3" style="font-weight: bold;">Áo khoác lông ngỗng</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>95.000.000 VNĐ</h6><h6 class="text-muted ml-2"><del>15.000.000 VNĐ</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-eye text-primary mr-1"></i>Xem chi tiết</a>
+                                <a href="" class="btn btn-sm text-dark p-0" style="background-color: white;"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pb-1">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination justify-content-center mb-3">
+                            <li class="page-item disabled">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Shop Product End -->
+        </div>
+    </div>
+
+    
+   
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__columns">
+              <a href="/" class="footer__logo">
+                <img src="./img-20230509T042124Z-001/img/auto/logo banner1.jpg" width="230rem" alt="Logo" class="footer__logo img">
+              </a>
+            </div>
+            <div class="footer__links">
+                <div class="footer__column footer__column--right" style="font-size: 15px;">
+                  <a href="#" class="footer__link">CẨM NANG THỜI TRANG</a>
+                  <a href="#" class="footer__link">Vest nam</a>
+                  <a href="#" class="footer__link">Vest cưới</a>
+                  <a href="#" class="footer__link">Vest công sở</a>
+                  <a href="#" class="footer__link">Đồng phục</a>
+                  <a href="#" class="footer__link">Sơ mi nam</a>
+                </div>
+              </div>
+              <div class="footer__links">
+                <div class="footer__column footer__column--right" style="font-size: 15px;">
+                  <a href="#" class="footer__link">HỖ TRỢ KHÁCH HÀNG</a>
+                  <a href="#" class="footer__link">Hướng dẫn mua hàng online</a>
+                  <a href="#" class="footer__link">Chính sách đổi trả, bảo hành</a>
+                  <a href="#" class="footer__link">Chính sách vận chuyển</a>
+                  <a href="#" class="footer__link">Hướng dẫn thanh toán</a>
+                  <a href="#" class="footer__link">Chính sách bảo mật</a>
+                </div>
+              </div>
+              <div class="footer__links">
+                <div class="footer__column footer__column--right" style="font-size: 15px;">
+                  <a href="#" class="footer__link">DANH SÁCH CỬA HÀNG</a>
+                  <a href="#" class="footer__link">Store 1: 287 Trương Định, Hoàng Mai, HN</a>
+                  <a href="#" class="footer__link">Store 2: Dịch Vụ 2, Vân Từ, Phú Xuyên, HN</a>
+                  <a href="#" class="footer__link">Store 3: 186 Hoàng Văn Thụ, Tp. Thái Nguyên.</a>
+                  <a href="#" class="footer__link">Store 4: 71 Hùng vương, Hải Châu, TP. Đà Nẵng</a>
+                  <a href="#" class="footer__link">Store 5: 137 Phùng Khoang, Nam Từ Liêm , Hà Nội</a>
+                </div>
+              </div>
+              <div class="footer__social">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img-20230509T042124Z-001/img/icon/in.svg" alt="img" class="footer__img img">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img-20230509T042124Z-001/img/icon/tw.svg" alt="img" class="footer__img img">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="./img-20230509T042124Z-001/img/icon/yt.svg" alt="img" class="footer__img img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <div class="footer__copy">
+            © 2023 Copyright 
+            <a href="https://www.facebook.com/Khackien2002/" class="footer__link" target="_blank">@Khackien2002</a>. 
+            All rights reserved.
+          </div>
+        </div>
+      </footer>
+      
+    <!-- <a href="#" class="scroll-up" id="scroll-up">
+        <img src="./img-20230509T042124Z-001/img/icon/arrow.svg" alt="img" class="scroll__img img">
+    </a> -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+    
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./js-20230509T042911Z-001/js/easing.min.js"></script>
+    <script src="./js-20230509T042911Z-001/js/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="./js-20230509T042911Z-001/js/script.js"></script>
+    <!-- Template Javascript -->
+    <script src="./js-20230509T042911Z-001/js/main.js"></script>
+</body>
+
+</html>
